@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="main-heading">
+      HARSHAVARDHAN V GULED <span class="subheading">(Software Engineer)</span>
+    </h1>
+    <div class="profile-pic-container">
+      <img src="images/myimg.jpg" alt="Harshavardhan's Photo" class="profile-pic" />
+    </div>
+    <h3 class="skills">Web Developer | Java Enthusiast | Cybersecurity Learner</h3>
+    <a class="resume-button" href="resume.pdf" download>📄 Download Resume</a>
+  </header>
+
+  <!-- Hamburger menu -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul id="nav-links">
+      <li><a href="#" onclick="showSection('about')">About</a></li>
+      <li><a href="#" onclick="showSection('certifications')">Certifications</a></li>
+      <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <main>
+    <section id="about" class="hidden fade">
+      <h2>About Me</h2>
+      <p>Hello! I'm Harshavardhan, a software engineer passionate about web apps, Java, cybersecurity, and design.</p><br>
+      <h2>Graduation</h2>
+      <p>Alvas Institute Of Engineering and Technology<br>CGPA - 8.7</p><br>
+      <h2>Contact</h2>
+      <p>
+        📧 <a href="mailto:harshvg2020@gmail.com">harshvg2020@gmail.com</a><br>
+        📱 <a href="tel:+919110255930">+91-9110255930</a><br>
+        🔗 <a href="https://www.linkedin.com/in/harshavardhan-v-a759262a1" target="_blank">LinkedIn Profile</a>
+      </p>
+    </section>
+
+    <section id="certifications" class="hidden fade">
+      <h2>Certifications</h2>
+      <div class="cert-container">
+        <div class="cert"><img src="images/java.png"><p>Java – Infosys Springboard</p></div>
+        <div class="cert"><img src="images/participation.png"><p>CyberSecurity – 1Stop.ai</p></div>
+        <div class="cert"><img src="images/project.png"><p>Info Gathering Tool – 1Stop.ai</p></div>
+        <div class="cert"><img src="images/internship.png"><p>Internship – CyberSecurity</p></div>
+        <div class="cert"><img src="images/gd.png"><p>Graphics Design Bootcamp – Udemy</p></div>
+        <div class="cert"><img src="images/genai.png"><p>Generative AI Workshop – Nxt Wave</p></div>
+      </div>
+    </section>
+
+    <section id="projects" class="hidden fade">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Personal Portfolio Website</strong> – HTML, CSS, JS</li>
+        <li>Working on more projects...</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
