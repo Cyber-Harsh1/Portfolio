@@ -8,6 +8,7 @@ function showSection(sectionId) {
     if (target) {
       target.classList.remove("hidden");
       setTimeout(() => target.classList.add("show"), 10);
+  
     }
   
     // Hide menu on small screens after click
